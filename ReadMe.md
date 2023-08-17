@@ -7,7 +7,7 @@ PyTorch Implementation of the Model and Training Process of Real-ESRGAN
 - OutdoorSceneTraining (OST)  
 I'll organize these three datasets, and after removing images with height or width less than 256, I'll compress them into a file called "train_HR.zip."  
 ## Pytorch Weight file  
-A weight file for a generator and discriminator model trained for 200 epochs can be download from [here](https://drive.google.com/file/d/1d334zXOshzRkxR4w0E_RL9kNIvStszeB/view?usp=sharing) and [here](https://drive.google.com/file/d/1ttZ2xUNfUO06duYYwWwoyZMONJr9RTQG/view?usp=sharing)(Google Drive Link).  
+A weight file for a generator and discriminator model trained for 14k iterations can be download from [here](https://drive.google.com/file/d/1d334zXOshzRkxR4w0E_RL9kNIvStszeB/view?usp=sharing) and [here](https://drive.google.com/file/d/1ttZ2xUNfUO06duYYwWwoyZMONJr9RTQG/view?usp=sharing)(Google Drive Link).  
 ## Usage  
 ### Train  
 ```
