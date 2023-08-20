@@ -7,7 +7,7 @@ PyTorch Implementation of the Model and Training Process of Real-ESRGAN
 - OutdoorSceneTraining (OST)  
 I'll organize these three datasets, and after removing images with height or width less than 256, I'll compress them into a file called "train_HR.zip."  
 ## Pytorch Weight file  
-A weight file for a generator and discriminator model trained for 200 epochs can be download from [here](https://drive.google.com/file/d/1d334zXOshzRkxR4w0E_RL9kNIvStszeB/view?usp=sharing) and [here](https://drive.google.com/file/d/1ttZ2xUNfUO06duYYwWwoyZMONJr9RTQG/view?usp=sharing)(Google Drive Link).  
+A weight file for a generator and discriminator model trained for 43500 iterations can be download from [here](https://drive.google.com/file/d/1Usyk3KImjDgwBs8w55yhF4tD9QKK77X-/view?usp=sharing) and [here](https://drive.google.com/file/d/1ybBI3i6-lWihVwZY5cg4JBygWwUggck1/view?usp=sharing)(Google Drive Link).  
 ## Usage  
 ### Train  
 ```
@@ -36,7 +36,7 @@ optional arguments:
 - batch size : 16  
 - optimizer : Adam
 - First train generator for 10k iteration with learning rate $2\times 10^{-4}$  
-- Then train generator and discriminator for 4k iteration with learning rate: 1e-4  
+- Then train generator and discriminator for 3.5k iteration with learning rate: 1e-4  
 - adopt exponential moving average(EMA) with beta = 0.999
 - discriminator use Unet with SN(spectral normalization)  
 - Real Esrgan is trained with a combination loss of pixel-loss(L1 loss), perceptual loss and GAN loss  
@@ -73,4 +73,4 @@ REAL-ESRGAN results:
 ## Training results  
 **Upscale Factor = 4**  
 This is a batch of images saved every 100 batches.The leftmost column is the low-resolution image obtained by interpolation using the BICUBIC method. The middle column is the original high-resolution image, and the rightmost column is the super-resolution image reconstructed using the model.  
-![](images/training/14000.png)
+![](images/training/43500.png)
